@@ -48,6 +48,10 @@ module.exports = {
     "elementUi": {
       "type": "confirm",
       "message": "Install Element-UI?"
+    },
+    "vueMq": {
+      "type": "confirm",
+      "message": "Install Vue MQ (MediaQuery)?"
     }
   },
   "filters": {},
