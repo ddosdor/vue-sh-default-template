@@ -2,7 +2,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
-import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Vue from 'vue';
 {{#vueMq}}
 import VueMQ from 'vue-mq';
 {{/vueMq}}
@@ -10,13 +10,13 @@ import VueMQ from 'vue-mq';
 import ElementUI from 'element-ui'
 {{/elementUi}}
 import { ShI18n, i18n } from './translate';
-import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import App from './App';
 import store from './store';
 {{#router}}
-import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import router from './router';
 {{/router}}
 
-Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.config.productionTip = false;
 
 {{#elementUi}}
 Vue.use(ElementUI)
@@ -36,12 +36,12 @@ new Vue({
   el: '#app',
   router,
   {{#if_eq build "runtime"}}
-  render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  render: h => h(App),
   {{/if_eq}}
   {{#if_eq build "standalone"}}
   i18n,
   store,
   template: '<App/>',
-  components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  components: { App },
   {{/if_eq}}
-}){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+});
