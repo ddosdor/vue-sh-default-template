@@ -20,7 +20,7 @@ Vue.config.productionTip = false;
 Vue.use(ElementUI)
 {{/elementUi}}
 {{#vueMq}}
-Vue.use(VueMq, {
+Vue.use(VueMQ, {
   breakpoints: { // default breakpoints - customize this
     sm: 450,
     md: 1250,

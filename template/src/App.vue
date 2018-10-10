@@ -5,26 +5,16 @@
     </header>
     <main>
       <img src="./assets/images/logo.png" alt="Vue.js PWA">
-      {{#router}}
       <router-view></router-view>
-      {{else}}
-      <WelcomeVue></WelcomeVue>
-      {{/router}}
     </main>
   </div>
 </template>
 
 <script>
-{{#unless router}}
-import WelcomeVue from '@/components/Home/WelcomeVue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
-{{/unless}}
 export default {
-  name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
-  components: {
-    WelcomeVue{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{/router}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  name: 'app',
+  components: {},
+};
 </script>
 
 <style>

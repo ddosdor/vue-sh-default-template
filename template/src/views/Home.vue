@@ -1,13 +1,16 @@
 <template>
-
+  <div class="HomeView">
+    <WelcomeVue />
+  </div>
 </template>
 
 <script>
-import store from '@/store';
+import WelcomeVue from '@/components/Home/WelcomeVue';
 
 export default {
   name: 'Home',
-}
+  components: { WelcomeVue },
+};
 </script>
 
 <style lang="sass" scoped></style>
