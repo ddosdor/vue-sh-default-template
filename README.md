@@ -9,3 +9,14 @@ Default Vue 2.x template.
 ```bash
 vue init ddosdor/vue-sh-default-template my-project
 ```
+
+## Abnout this template
+
+### Included dependencies
+- [Vue-Router](https://github.com/vuejs/vue-router)
+- [ElementUi](https://github.com/ElemeFE/element)
+- [Vue MQ](https://github.com/AlexandreBonaventure/vue-mq)
+- [Vuex](https://github.com/vuejs/vuex)
+
+### Folder structure
+...
