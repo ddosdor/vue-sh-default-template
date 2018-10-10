@@ -33,7 +33,6 @@ module.exports = {
     }],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    // Telestrada DEVS rules
     "linebreak-style": 0,
     "import/prefer-default-export": "off",
     "no-underscore-dangle" : "off",

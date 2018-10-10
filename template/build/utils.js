@@ -56,9 +56,8 @@ exports.cssLoaders = function (options) {
         {
           loader: 'sass-resources-loader',
           options: {
-            resources: ['./src/styles/defs/_colors.sass',
-                        './src/styles/defs/_fonts.sass',
-                        './src/styles/mixins/_mixins.sass']
+            resources: ['./src/styles/defs/__colors.sass',
+                        './src/styles/mixins/__mixins.sass']
           }
         }
       ),
