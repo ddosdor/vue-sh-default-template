@@ -12,9 +12,7 @@ import ElementUI from 'element-ui'
 import { ShI18n, i18n } from './translate';
 import App from './App';
 import store from './store';
-{{#router}}
 import router from './router';
-{{/router}}
 
 Vue.config.productionTip = false;
 
