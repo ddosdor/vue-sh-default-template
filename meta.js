@@ -52,18 +52,9 @@ module.exports = {
     "elementUi": {
       "type": "confirm",
       "message": "Install Element-UI?"
-    },
-    "e2e": {
-      "type": "confirm",
-      "message": "Setup e2e tests with Nightwatch?"
     }
   },
   "filters": {
-    ".eslintrc.js": "lint",
-    ".eslintignore": "lint",
-    "config/test.env.js": "unit || e2e",
-    "test/unit/**/*": "unit",
-    "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
     "src/router/**/*": "router"
   },
