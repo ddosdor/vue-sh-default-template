@@ -1,0 +1,61 @@
+// media-queries
+@mixin breakpoint($point)
+  @if $point == large
+    @media screen and (min-width: 1200px)
+      @content
+
+  @else if $point == medium
+    @media screen and (min-width: 992px)
+      @content
+
+  @else if $point == small
+    @media screen and (max-width: 991px)
+       @content
+
+  @else if $point == xsmall
+    @media screen and (max-width: 768px)
+      @content
+
+
+@mixin linearGradient($top, $bottom)
+    background: $top
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom))
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%)
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%)
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%)
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 )
+
+@mixin border-radius($radius)
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+
+@mixin transform($val)
+  -webkit-transform: $val
+  -moz-transform: $val
+  -ms-transform: $val
+  transform: $val
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false)
+  @if $inset == true
+    -webkit-box-shadow: inset $top $left $blur $color
+    -moz-box-shadow: inset $top $left $blur $color
+    box-shadow: inset $top $left $blur $color
+  @else
+    -webkit-box-shadow: $top $left $blur $color
+    -moz-box-shadow: $top $left $blur $color
+    box-shadow: $top $left $blur $color
+
+@mixin transition($transition...)
+    -moz-transition:    $transition
+    -o-transition:      $transition
+    -webkit-transition: $transition
+    transition:         $transition
+
+@mixin backface-visibility($val)
+  backface-visibility: $val
+  -webkit-backface-visibility: $val
