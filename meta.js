@@ -45,17 +45,11 @@ module.exports = {
         }
       ]
     },
-    "router": {
-      "type": "confirm",
-      "message": "Install vue-router?"
-    },
     "elementUi": {
       "type": "confirm",
       "message": "Install Element-UI?"
     }
   },
-  "filters": {
-    "src/router/**/*": "router"
-  },
+  "filters": {},
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack \n\n Remember to install @sh/vue-component-ui\n yarn add @sh/vue-component-ui --registry http://192.168.111.15:4873 "
 };
